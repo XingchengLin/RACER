@@ -1,0 +1,7 @@
+# phi_pairwise_contact_well r_min, r_max, kappa, min_seq_sep
+phi_pairwise_contact_well 4.5 6.5 5.0 10
+# phi_protein_mediated_contact_well r_min, r_max, kappa, min_seq_sep, density_threshold, density_kappa
+#phi_protein_mediated_contact_well 6.5 9.5 5.0 10 2.6 7.0
+# phi_water_mediated_contact_well r_min, r_max, kappa, min_seq_sep, density_threshold, density_kappa
+#phi_water_mediated_contact_well 6.5 9.5 5.0 10 2.6 7.0
+

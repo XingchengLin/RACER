@@ -22,7 +22,7 @@ git clone https://github.com/XingchengLin/RACER.git
 * Clean the PDB files so that they contain only one TCR-p-MHC pair with defined Chain IDs for TCR as well as p-MHC. An example is given in the folder data/. The native.pdb is cleaned from 3QIB.pdb. The testBinders were built using Modeller based on the template of native.pdb, with replaced peptide sequences.
 
 * Step 2 Optimize the energy model
-* This step includes 1. Processing the PDB files so that they follow the format of AWSEM model developed by Wolynes group DOI: 10.1021/jp212541y; 2. Generate 1000 decoy peptide sequences from the strong binder; 3. Evaluate a "Phi" map between the TCR and the peptide, based on their contact probability; 4. Optimize a force field by maximizing the Z score between the binding energies of strong and decoy sequences (also c.f. DOI: 10.1002/ijch.201300145)
+* This step includes 1. Processing the PDB files so that they follow the format of the AWSEM model developed by Wolynes group DOI: 10.1021/jp212541y; 2. Generate 1000 decoy peptide sequences from the strong binder; 3. Evaluate a "Phi" map between the TCR and the peptide, based on their contact probability; 4. Optimize a force field by maximizing the Z score between the binding energies of strong and decoy sequences 
 ```
 bash cmd.preprocessing.sh 3qib C D 782 794
 bash cmd.optimize.sh
@@ -44,3 +44,4 @@ The final results (binding energies) are reported in the folder evaluated_bindin
 
 ## Reference:
 * Rapid Assessment of T-Cell Receptor Specificity of the Immune Repertoire, Xingcheng Lin, Jason T. George, Nicholas P. Schafer, Kevin Ng Chau, Cecilia Clementi, José N. Onuchic, Herbert Levine (https://www.biorxiv.org/content/10.1101/2020.04.06.028415v2)
+* Learning To Fold Proteins Using Energy Landscape Theory, Nicholas P. Schafer, Bobby L. Kim, Weihua Zheng, Peter G. Wolynes, DOI: 10.1002/ijch.201300145

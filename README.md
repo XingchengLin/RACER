@@ -44,4 +44,4 @@ The final results (binding energies) are reported in the folder evaluated_bindin
 
 ## Reference:
 * Rapid Assessment of T-Cell Receptor Specificity of the Immune Repertoire, Xingcheng Lin, Jason T. George, Nicholas P. Schafer, Kevin Ng Chau, Cecilia Clementi, José N. Onuchic, Herbert Levine (https://www.biorxiv.org/content/10.1101/2020.04.06.028415v2)
-* Learning To Fold Proteins Using Energy Landscape Theory, Nicholas P. Schafer, Bobby L. Kim, Weihua Zheng, Peter G. Wolynes, DOI: 10.1002/ijch.201300145
+* RACER borrows the idea of Principle of Minimal Frustration in protein folding, illustrated here: Learning To Fold Proteins Using Energy Landscape Theory, Nicholas P. Schafer, Bobby L. Kim, Weihua Zheng, Peter G. Wolynes, DOI: 10.1002/ijch.201300145

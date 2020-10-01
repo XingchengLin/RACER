@@ -43,4 +43,4 @@ The final results (binding energies) are reported in the folder evaluated_bindin
 
 
 ## Reference:
-[Rapid Assessment of T-Cell Receptor Specificity of the Immune Repertoire Xingcheng Lin, Jason T. George, Nicholas P. Schafer, Kevin Ng Chau, Cecilia Clementi, José N. Onuchic, Herbert Levine] (https://www.biorxiv.org/content/10.1101/2020.04.06.028415v2)
+* Rapid Assessment of T-Cell Receptor Specificity of the Immune Repertoire, Xingcheng Lin, Jason T. George, Nicholas P. Schafer, Kevin Ng Chau, Cecilia Clementi, José N. Onuchic, Herbert Levine (https://www.biorxiv.org/content/10.1101/2020.04.06.028415v2)

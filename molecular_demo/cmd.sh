@@ -8,6 +8,8 @@
 
 bash cmd.preprocessing.sh 3qib C D 782 794
 
+bash cmd.optimize.sh
+
 echo "Check the TCR chain IDs of the testBinder file (because Modeller changed it when rebuilding...) !!!"
 read -rsp $'Press any key to continue...\n' -n1 key
 

@@ -12,6 +12,7 @@ git clone https://github.com/XingchengLin/RACER.git
 
 * Download and install python using conda: https://www.anaconda.com/products/individual
 * Download and install Modeller using conda: https://anaconda.org/salilab/modeller
+* Note: you need to have a Modeller academic liscence in order to run Modeller
 * Download and install Biopython using conda: https://biopython.org/wiki/Packages
 
 ## Example demo

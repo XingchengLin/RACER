@@ -10,9 +10,11 @@ Rapid Coarse-grained Epitope TCR Model
 git clone https://github.com/XingchengLin/RACER.git
 ```
 
+## Molecular Demo
+
 * Download and install python using conda: https://www.anaconda.com/products/individual
 * Download and install Modeller using conda: https://anaconda.org/salilab/modeller
-* Note: you need to have a Modeller academic liscence in order to run Modeller
+* Note: One needs to obtain a Modeller academic license in order to run Modeller: https://salilab.org/modeller/registration.html
 * Download and install Biopython using conda: https://biopython.org/wiki/Packages
 
 ## Example demo
@@ -41,6 +43,44 @@ bash cmd.evaluate_bindingE.sh 3qib C D
 bash cmd.sh
 ```
 The final results (binding energies) are reported in the folder evaluated_binding_E/
+
+* Explanation for the output:
+* epitopeE.txt -- Binding energies of the strong binder
+* non-epitopeE.txt -- Binding energies of the weak binders
+
+
+
+
+## Statistical Demo
+
+* Note: The output from this demo is proper subset of (and so different from) the larger data analyzed in the referenced RACER manuscript. In particular, we focused on 1000 of the original 10^5 T cells and truncate the thymic selection to be performed on 100 of the original 10^4 self-peptides. 
+
+~ ~ ~ ~ ~ ~ ~ ~
+* DESCRIPTION for the files:
+- RACERMATLab.m: 		Script file which provides an example of thymic selection and T-cell recognition of foreign peptides and point-mutated self-peptides.
+
+- PairwiseAffinity.mat:		MATLab data file containing pairwise binding energy values for 100 thymic self-peptides and 1000 T-cells (peptides delineated by column and T-cells by row)
+
+- PairwiseAffinityMutant.mat:	MATLab data file containing pairwise binding energy values for 1000 point-mutated (non-self) peptides and 1000 T-cells (peptides delineated by column and T-cells by row)
+
+- PairwiseAffinityRandom.mat:	MATLab data file containing pairwise binding energy values for 1000 randomly-generated foreign (non-self) peptides and 1000 T-cells (peptides delineated by column and T-cells by row)
+
+- RACERMATLab.m:		Function file which generates the T-cell activation energy cutoff on the normalized affinity interval of [0,10] yielding 50% thymic negative selection (variable En50); outputs plots of the distribution of binding energies, thymic selection, and post-selection T-cell recognition profiles of point mutant and random peptides.
+
+
+* NOTES:
+- The T-cells and their corresponding indices are the same across all three input arrays. In other words, binding energies for the j^th T-cell to self-peptides, mutant peptide, and foreign peptide are located at the j^th column of PairwiseAffinity.mat, PairwiseAffinityMutant.mat, and PairwiseAffinityRandom.mat respectively.
+
+- MATLab source script and functions compiled on version R2017b.
+
+* Explanation for the output figures: 
+Figure 1a. Empirical maximum binding energy distributions of T-cells with their self-peptides (maximum for each T-cell taken over all self-peptides)
+* Figure 1b. Thymic selection curve (T-cell deletion probability as a function of thymic selection energy cutoff.
+* Figure 2a. Post-selection individual T-cell recognition of foreign peptides as a function of T-cell survival probability
+* Figure 2b. Post-selection T-cell repertoire recognition of foreign peptides as a function of T-cell survival probability
+* Figure 2c. Post-selection individual T-cell recognition of mutant peptides as a function of T-cell survival probability
+* Figure 2d. Post-selection T-cell repertoire recognition of mutant peptides as a function of T-cell survival probability
+
 
 
 ## Reference:

@@ -17,7 +17,7 @@ Note: The code showing here is built for a Linux system. For a Mac user, please 
 ```
 cmd_4mac.sh
 ```
-
+* The code was tested on Python 3.6.7
 
 * Download and install python using conda: https://www.anaconda.com/products/individual
 * Download and install Modeller using conda: https://anaconda.org/salilab/modeller

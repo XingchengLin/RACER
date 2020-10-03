@@ -5,10 +5,15 @@ Rapid Coarse-grained Epitope TCR Model
 
 
 ## Installation
-* Clone RACER repository
+* Clone the RACER repository
 ```
 git clone https://github.com/XingchengLin/RACER.git
 ```
+* Download and install python using conda: https://www.anaconda.com/products/individual
+* Download and install Modeller using conda: https://anaconda.org/salilab/modeller
+* Note: One needs to obtain a Modeller academic license in order to run Modeller: https://salilab.org/modeller/registration.html
+* Download and install Biopython using conda: https://biopython.org/wiki/Packages
+* Note: the installation time should be rapid
 
 ## Molecular Demo
 
@@ -19,10 +24,6 @@ cmd_4mac.sh
 ```
 * The code was tested with Python 3.6.7
 
-* Download and install python using conda: https://www.anaconda.com/products/individual
-* Download and install Modeller using conda: https://anaconda.org/salilab/modeller
-* Note: One needs to obtain a Modeller academic license in order to run Modeller: https://salilab.org/modeller/registration.html
-* Download and install Biopython using conda: https://biopython.org/wiki/Packages
 
 ## Example
 * Optimize an energy model given available PDB of 3QIB.pdb : https://www.rcsb.org/structure/3QIB

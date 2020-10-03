@@ -32,7 +32,7 @@ cmd_4mac.sh
 * Clean the PDB files so that they contain only one TCR-p-MHC pair with defined Chain IDs for TCR as well as p-MHC. An example is given in the folder data/. The native.pdb is cleaned from 3QIB.pdb. The testBinders were built using Modeller based on the template of native.pdb, with replaced peptide sequences.
 
 * Step 2 Optimize the energy model
-* This step includes 1. Processing the PDB files so that they follow the format of the AWSEM model developed by Wolynes group DOI: 10.1021/jp212541y; 2. Generate 1000 decoy peptide sequences from the strong binder; 3. Evaluate a "Phi" map between the TCR and the peptide, based on their contact probability; 4. Optimize a force field by maximizing the Z score between the binding energies of strong and decoy sequences 
+* This step includes 1. Processing the PDB files so that they follow the format of the AWSEM model (DOI: 10.1021/jp212541y) developed by Wolynes group; 2. Generate 1000 decoy peptide sequences from the strong binder; 3. Evaluate a "Phi" map between the TCR and the peptide, based on their contact probability; 4. Optimize a force field by maximizing the Z score between the binding energies of strong and decoy sequences 
 ```
 bash cmd.preprocessing.sh 3qib C D 782 794
 bash cmd.optimize.sh

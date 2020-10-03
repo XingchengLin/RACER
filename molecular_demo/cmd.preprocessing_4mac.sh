@@ -23,9 +23,9 @@ cd sequences/
 
 # Build the sequence for native.pdb
 python buildseq.py native
-bash cmd.cleanSequences.sh native.seq 
+bash cmd.cleanSequences_4mac.sh native.seq 
 
-bash for_gBinder_sequences.sh
+bash for_gBinder_sequences_4mac.sh
 
 # Create the label for the peptide sequence indices;
 #echo "Type the startind and ending indices of peptide residues, separated by space:"
@@ -60,6 +60,6 @@ python create_tms.py sequences/TCR_randomization/randomize_position_file.txt $to
 
 
 
-sed "s/TCR_NAME/$PDBid/g; s/TCR_ALPHACHAIN/$alphaChain/g; s/TCR_BETACHAIN/$betaChain/g" template_evaluate_phi.py > evaluate_phi.py
+gsed "s/TCR_NAME/$PDBid/g; s/TCR_ALPHACHAIN/$alphaChain/g; s/TCR_BETACHAIN/$betaChain/g" template_evaluate_phi.py > evaluate_phi.py
 python evaluate_phi.py
 

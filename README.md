@@ -82,7 +82,7 @@ The code uses MATLab script and is compiled on version R2017b.
 
 
 * Explanation for the output figures: 
-Figure 1a. Empirical maximum binding energy distributions of T-cells with their self-peptides (maximum for each T-cell taken over all self-peptides)
+* Figure 1a. Empirical maximum binding energy distributions of T-cells with their self-peptides (maximum for each T-cell taken over all self-peptides)
 * Figure 1b. Thymic selection curve (T-cell deletion probability as a function of thymic selection energy cutoff.
 * Figure 2a. Post-selection individual T-cell recognition of foreign peptides as a function of T-cell survival probability
 * Figure 2b. Post-selection T-cell repertoire recognition of foreign peptides as a function of T-cell survival probability

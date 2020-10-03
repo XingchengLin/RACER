@@ -50,6 +50,8 @@ bash cmd.evaluate_bindingE.sh 3qib C D
 ```
 bash cmd.sh
 ```
+* Expected run time on a personal computer: around 1 minute for our given example data (note it takes longer for running the much larger set of data used in the referenced RACER manuscript)
+    
 The final results (binding energies) are reported in the folder evaluated_binding_E/
 
 * Explanation for the output:
@@ -90,6 +92,7 @@ The code uses MATLab script and is compiled on version R2017b.
 * Figure 2c. Post-selection individual T-cell recognition of mutant peptides as a function of T-cell survival probability
 * Figure 2d. Post-selection T-cell repertoire recognition of mutant peptides as a function of T-cell survival probability
 
+* Expected run time on a personal computer: around 1 minute for our given example data (note it takes longer for running the much larger set of data used in the referenced RACER manuscript)
 
 
 ## Reference:

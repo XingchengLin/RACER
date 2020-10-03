@@ -61,6 +61,9 @@ The final results (binding energies) are reported in the folder evaluated_bindin
 
 * Note: The output from this demo is proper subset of (and so different from) the larger data analyzed in the referenced RACER manuscript. In particular, we focused on 1000 of the original 10^5 T cells and truncate the thymic selection to be performed on 100 of the original 10^4 self-peptides. 
 
+## System requirement
+The code uses MATLab script and is compiled on version R2017b. 
+
 ~ ~ ~ ~ ~ ~ ~ ~
 * DESCRIPTION for the files:
 - RACERMATLab.m: 		Script file which provides an example of thymic selection and T-cell recognition of foreign peptides and point-mutated self-peptides.
@@ -77,7 +80,6 @@ The final results (binding energies) are reported in the folder evaluated_bindin
 * NOTES:
 - The T-cells and their corresponding indices are the same across all three input arrays. In other words, binding energies for the j^th T-cell to self-peptides, mutant peptide, and foreign peptide are located at the j^th column of PairwiseAffinity.mat, PairwiseAffinityMutant.mat, and PairwiseAffinityRandom.mat respectively.
 
-- MATLab source script and functions compiled on version R2017b.
 
 * Explanation for the output figures: 
 Figure 1a. Empirical maximum binding energy distributions of T-cells with their self-peptides (maximum for each T-cell taken over all self-peptides)

@@ -70,9 +70,9 @@ The code uses MATLab script and is compiled on version R2017b.
 
 - PairwiseAffinity.mat:		MATLab data file containing pairwise binding energy values for 100 thymic self-peptides and 1000 T-cells (peptides delineated by column and T-cells by row)
 
-- PairwiseAffinityMutant.mat:	MATLab data file containing pairwise binding energy values for 1000 point-mutated (non-self) peptides and 1000 T-cells (peptides delineated by column and T-cells by row)
+- PairwiseAffinityMutant.mat:	MATLab data file containing pairwise binding energy values for 1000 point-mutated (non-self) peptides and 1000 T-cells (peptides delineated by column and T-cells by row). The binding energy came from the output of the molecular module of RACER.
 
-- PairwiseAffinityRandom.mat:	MATLab data file containing pairwise binding energy values for 1000 randomly-generated foreign (non-self) peptides and 1000 T-cells (peptides delineated by column and T-cells by row)
+- PairwiseAffinityRandom.mat:	MATLab data file containing pairwise binding energy values for 1000 randomly-generated foreign (non-self) peptides and 1000 T-cells (peptides delineated by column and T-cells by row). The binding energy came from the output of the molecular module of RACER.
 
 - RACERMATLab.m:		Function file which generates the T-cell activation energy cutoff on the normalized affinity interval of [0,10] yielding 50% thymic negative selection (variable En50); outputs plots of the distribution of binding energies, thymic selection, and post-selection T-cell recognition profiles of point mutant and random peptides.
 

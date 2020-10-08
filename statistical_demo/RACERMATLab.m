@@ -190,6 +190,9 @@ ylabel('T-cell recognition probbaility')
 ylim([0,1]);
 set(gcf, 'Position',  [200, 200, 900, 500]);
 
+savefig('MaxEnergiesSelectionCurve.fig');
+saveas(gcf,'MaxEnergiesSelectionCurve.png');
+
 %% Figure 2
 %Individual TCR Recognition vs PSurvival (1-RecognitionMD)
 figure; subplot(2,2,1); box on;
@@ -236,8 +239,8 @@ ylim([0 1]);
 set(gcf, 'Position',  [200, 200, 900, 500]);
 
 
-
-
+savefig('TCellRecognitionRates.fig');
+saveas(gcf,'TCellRecognitionRates.png');
 
 
 end

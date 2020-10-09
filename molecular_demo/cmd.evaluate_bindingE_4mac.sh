@@ -34,5 +34,3 @@ mkdir -p evaluated_binding_E
 
 gsed "s/TCR_NAME/$PDBid/g; s/TCR_ALPHACHAIN/$alphaChain/g; s/TCR_BETACHAIN/$betaChain/g" template_evaluate_binding_E.py > evaluate_binding_E.py
 python evaluate_binding_E.py
-
-

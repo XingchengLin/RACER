@@ -57,7 +57,7 @@ The final results (binding energies) are reported in the folder evaluated_bindin
 * Explanation for the output:
 * epitopeE.txt -- Binding energies of the strong binder
 * non-epitopeE.txt -- Binding energies of the weak binders
-
+* Evaluated_bindingE.png -- One plot showing the predicted range of binding energies for the weak binders, as well as the strong binders
 
 
 ## Statistical Demo

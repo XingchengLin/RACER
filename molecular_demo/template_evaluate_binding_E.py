@@ -12,9 +12,8 @@ import sys
 
 
 import numpy as np
+import matplotlib.pyplot as plt
 
-
-sys.path.append('/Users/xl23/Working/Levine/jason/optimization/awsem')
 from common_function import *
 
 ################################################
@@ -239,7 +238,17 @@ def evaluate_hamiltonian_decoy_structures_provided(protein, hamiltonian, native_
 
 
 
+def draw_plot(data, pos, edge_color, fill_color, labels):
+    bp = ax.boxplot(data, positions=pos, patch_artist=True, showfliers=False, widths=0.75, showmeans=False, meanline=False, medianprops=dict(linewidth=2.5), labels=labels)
 
+
+    for element in ['boxes', 'whiskers', 'fliers', 'means', 'medians', 'caps']:
+        plt.setp(bp[element], color=edge_color)
+
+    for patch in bp['boxes']:
+        patch.set(facecolor=fill_color)
+    
+    first_legend = ax.legend([bp["boxes"][0]], ['Weaker Binders'], loc='best')
 
 ###################################################################################################################################################
 
@@ -261,3 +270,28 @@ z_score, ave_e_native, ave_e_mgs, e_mg_std, e_mgs, e_natives = validate_hamilton
 np.savetxt('evaluated_binding_E/epitopeE.txt',np.real(e_natives), fmt='%1.3f')
 np.savetxt('evaluated_binding_E/non-epitopeE.txt',np.real(e_mgs), fmt='%1.3f')
 print(z_score)
+
+E_native_list = [np.real(e_natives)]
+E_decoy_list = [np.real(e_mgs)]
+
+# Draw the strong- and weak-binding energies
+fig, ax = plt.subplots()
+
+bp = ax.boxplot(E_decoy_list, positions=[0], patch_artist=True, showfliers=False, widths=0.75, showmeans=False, meanline=False, medianprops=dict(linewidth=2.5), labels=["Binding Energies"])
+
+
+for element in ['boxes', 'whiskers', 'fliers', 'means', 'medians', 'caps']:
+    plt.setp(bp[element], color='red')
+
+for patch in bp['boxes']:
+    patch.set(facecolor='tan')
+    
+first_legend = ax.legend([bp["boxes"][0]], ['Weak Binder'], loc='lower left')
+
+ax.scatter(0, E_native_list[0], s=100, marker='o', color='b', zorder=1000, label='Strong Binders')
+second_legend = ax.legend(loc='lower right')
+ax.add_artist(first_legend)
+plt.ylabel('Binding Energies')
+
+plt.savefig('./Evaluated_bindingE.png')
+

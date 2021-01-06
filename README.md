@@ -15,6 +15,10 @@ git clone https://github.com/XingchengLin/RACER.git
 * Download and install Biopython using conda: https://biopython.org/wiki/Packages
 * Note: the installation time should be rapid
 
+
+## Raw data
+The extended data set from (Birnbaum et al Cell 2014) used for our training
+
 ## Molecular Demo
 
 ## System requirement:

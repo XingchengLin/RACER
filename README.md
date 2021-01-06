@@ -17,7 +17,7 @@ git clone https://github.com/XingchengLin/RACER.git
 
 
 ## Raw data
-The extended data set from (Birnbaum et al Cell 2014) used for our training
+The extended dataset from (Birnbaum et al Cell 2014) used for our training
 
 ## Molecular Demo
 

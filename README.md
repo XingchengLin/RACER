@@ -43,7 +43,7 @@ bash cmd.preprocessing.sh 3qib C D 782 794
 bash cmd.optimize.sh
 ```
 * Note: "C" and "D" are the chain IDs of TCR alpha and beta chains. 782 and 794 are the starting and ending residue IDs of the presented peptide.
-* Note: For now, one needs to hard-set the cutoff for noise-filtering of the eigenvalues of the interaction matrix. Please make sure the file: ./gammas/randomized_decoy/01022019/direct_contact/proteins_list_phi_pairwise_contact_well4.5_6.5_5.0_10_lamb_filtered has no zero terms. Here, the cutoff was set as 74 in the file cmd.optimize.sh
+* Note: For now, one needs to hard-set the cutoff for noise-filtering of the eigenvalues of the interaction matrix. Please make sure the file: ./gammas/randomized_decoy/01022019/direct_contact/proteins_list_phi_pairwise_contact_well4.5_6.5_5.0_10_lamb_filtered after running optimization has no zero terms (eigenvalues). Here, the cutoff was set as 50 in the file cmd.optimize.sh, to keep the first 50 eigenvectors of the B matrix in Eq. (5) of the paper. This choice is made for consistency with the Supplementary Note S5 of the manuscript.
 
 * Step 3 Use the optimized energy model to evaluate the effective binding energies of strong/weak binders
 * This step uses the optimized energy model (a 20 by 20 matrix for different amino acid types) to evaluate the binding energies of the strong (native) and weak (testBinder) binders. A lower binding energy corresponds to a stronger binding affinity

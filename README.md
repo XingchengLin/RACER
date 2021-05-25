@@ -102,5 +102,5 @@ Run RACERMATLabScript.m
 
 
 ## Reference:
-* Rapid Assessment of T-Cell Receptor Specificity of the Immune Repertoire, Xingcheng Lin, Jason T. George, Nicholas P. Schafer, Kevin Ng Chau, Cecilia Clementi, José N. Onuchic, Herbert Levine (https://www.biorxiv.org/content/10.1101/2020.04.06.028415v2)
-* RACER borrows some ideas from the Principle of Minimal Frustration in protein folding, illustrated here: Learning To Fold Proteins Using Energy Landscape Theory, Nicholas P. Schafer, Bobby L. Kim, Weihua Zheng, Peter G. Wolynes, DOI: 10.1002/ijch.201300145
+* Xingcheng Lin, Jason T. George, Nicholas P. Schafer, Kevin Ng Chau, Cecilia Clementi, José N. Onuchic, Herbert Levine, Rapid assessment of T-cell receptor specificity of the immune repertoire. Nat Comput Sci 1, 362–373 (2021). https://doi.org/10.1038/s43588-021-00076-1
+* RACER borrows some ideas from the Principle of Minimal Frustration in protein folding, illustrated here: Nicholas P. Schafer, Bobby L. Kim, Weihua Zheng, Peter G. Wolynes, Learning To Fold Proteins Using Energy Landscape Theory, https://doi.org/10.1002/ijch.201300145

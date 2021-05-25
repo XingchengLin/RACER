@@ -1,0 +1,341 @@
+Binary file Evaluated_bindingE.png matches
+Binary file __pycache__/common_function.cpython-36.pyc matches
+add_fakeCB.py:####################################################################################
+add_fakeCB.py:# This script will help add fake CB atoms for Glycines
+add_fakeCB.py:#
+add_fakeCB.py:# Written by Xingcheng Lin, 06/10/2020
+add_fakeCB.py:####################################################################################
+add_fakeCB.py:################################################
+add_fakeCB.py:###########################################
+cmd.evaluate_bindingE.sh:#########################################################################
+cmd.evaluate_bindingE.sh:# Author: Xingcheng Lin
+cmd.evaluate_bindingE.sh:# Created Time: Thu Jun 18 22:32:00 2020
+cmd.evaluate_bindingE.sh:# File Name: cmd.for_evaluation_E.sh
+cmd.evaluate_bindingE.sh:# Description: 
+cmd.evaluate_bindingE.sh:#########################################################################
+cmd.evaluate_bindingE.sh:#!/bin/bash
+cmd.evaluate_bindingE_4mac.sh:#########################################################################
+cmd.evaluate_bindingE_4mac.sh:# Author: Xingcheng Lin
+cmd.evaluate_bindingE_4mac.sh:# Created Time: Thu Jun 18 22:32:00 2020
+cmd.evaluate_bindingE_4mac.sh:# File Name: cmd.for_evaluation_E.sh
+cmd.evaluate_bindingE_4mac.sh:# Description: 
+cmd.evaluate_bindingE_4mac.sh:#########################################################################
+cmd.evaluate_bindingE_4mac.sh:#!/bin/bash
+cmd.optimize.sh:#########################################################################
+cmd.optimize.sh:# Author: Xingcheng Lin
+cmd.optimize.sh:# Created Time: Wed Jun 17 22:29:58 2020
+cmd.optimize.sh:# File Name: cmd.process.sh
+cmd.optimize.sh:# Description: 
+cmd.optimize.sh:#########################################################################
+cmd.optimize.sh:#!/bin/bash
+cmd.optimize.sh:# The cut off for noise filtering
+cmd.preprocessing.sh:#########################################################################
+cmd.preprocessing.sh:# Author: Xingcheng Lin
+cmd.preprocessing.sh:# Created Time: Wed Jun 10 22:48:33 2020
+cmd.preprocessing.sh:# File Name: cmd.preprocessing.sh
+cmd.preprocessing.sh:# Description: 
+cmd.preprocessing.sh:#########################################################################
+cmd.preprocessing.sh:#!/bin/bash
+cmd.preprocessing.sh:# Add fake CB atoms, AWSEM format requirement
+cmd.preprocessing.sh:# Generate randomized sequence for the decoys;
+cmd.preprocessing.sh:# Build the sequence for native.pdb
+cmd.preprocessing.sh:# Create the label for the peptide sequence indices;
+cmd.preprocessing.sh:#echo "Type the startind and ending indices of peptide residues, separated by space:"
+cmd.preprocessing.sh:#read -rsp $'Press any key to continue...\n' -n1 key
+cmd.preprocessing.sh:#read -r pResid_startID pResid_endID
+cmd.preprocessing.sh:# Create the tms file, where the peptide is labeled as '2', while TCRs are labeled as '1';
+cmd.preprocessing.sh:# Get the total number of residues;
+cmd.preprocessing_4mac.sh:#########################################################################
+cmd.preprocessing_4mac.sh:# Author: Xingcheng Lin
+cmd.preprocessing_4mac.sh:# Created Time: Wed Jun 10 22:48:33 2020
+cmd.preprocessing_4mac.sh:# File Name: cmd.preprocessing.sh
+cmd.preprocessing_4mac.sh:# Description: 
+cmd.preprocessing_4mac.sh:#########################################################################
+cmd.preprocessing_4mac.sh:#!/bin/bash
+cmd.preprocessing_4mac.sh:# Add fake CB atoms, AWSEM format requirement
+cmd.preprocessing_4mac.sh:# Generate randomized sequence for the decoys;
+cmd.preprocessing_4mac.sh:# Build the sequence for native.pdb
+cmd.preprocessing_4mac.sh:# Create the label for the peptide sequence indices;
+cmd.preprocessing_4mac.sh:#echo "Type the startind and ending indices of peptide residues, separated by space:"
+cmd.preprocessing_4mac.sh:#read -rsp $'Press any key to continue...\n' -n1 key
+cmd.preprocessing_4mac.sh:#read -r pResid_startID pResid_endID
+cmd.preprocessing_4mac.sh:# Create the tms file, where the peptide is labeled as '2', while TCRs are labeled as '1';
+cmd.preprocessing_4mac.sh:# Get the total number of residues;
+cmd.sh:#########################################################################
+cmd.sh:# Author: Xingcheng Lin
+cmd.sh:# Created Time: Sun Jun 14 16:58:44 2020
+cmd.sh:# File Name: cmd.sh
+cmd.sh:# Description: 
+cmd.sh:#########################################################################
+cmd.sh:#!/bin/bash
+cmd_4mac.sh:#########################################################################
+cmd_4mac.sh:# Author: Xingcheng Lin
+cmd_4mac.sh:# Created Time: Sun Jun 14 16:58:44 2020
+cmd_4mac.sh:# File Name: cmd.sh
+cmd_4mac.sh:# Description: 
+cmd_4mac.sh:#########################################################################
+cmd_4mac.sh:#!/bin/bash
+common_function.py:# For Biopython
+common_function.py:####################################################################################
+common_function.py:# This script defines common functions used by RACER
+common_function.py:#
+common_function.py:# Written by Xingcheng Lin, 06/10/2020
+common_function.py:####################################################################################
+common_function.py:        # get atom coordinates as vectors
+common_function.py:    # center at origin
+common_function.py:    # find rotation matrix that rotates n -120 degrees along the ca-c vector
+common_function.py:    # apply rotation to ca-n vector
+common_function.py:    # put on top of ca atom
+common_function.py:    # Get all residues from a structure
+common_function.py:def read_column_from_file(file_name, column, header_comment_syntax="#", num_header_lines=0, column_delimiter=''):
+common_function.py:def read_phi_list(phi_list_file_name, header_comment_syntax="#", num_header_lines=0, column_delimiter=' '):
+common_function.py:    atom_list = Selection.unfold_entities(structure, 'A')  # A for atoms
+common_function.py:    # Find out how many total phi_i there are
+common_function.py:# These three functions provide a way of calling a function multiple times (that run independently)
+common_function.py:# on a certain number of processors so that a new function call starts when a processor becomes available
+common_function.py:################################################################################################################
+common_function.py:    # Find out how many total phi_i there are
+create_tms.py:###########################################################################
+create_tms.py:# This script will segment PDB according to user provided start and end IDs
+create_tms.py:#
+create_tms.py:# Written by Xingcheng Lin, 12/12/2016;
+create_tms.py:###########################################################################
+create_tms.py:################################################
+create_tms.py:#############################################
+create_tms.py:    # directory for the tms file
+create_tms.py:    # Get current working directory
+create_tms.py:    # Read in the only one line from the random_position_file;
+create_tms.py:            # There is no newline after the last residue
+create_tms.py:            # There is no newline after the last residue
+create_tms.py:############################################################################
+evaluate_binding_E.py:####################################################################################
+evaluate_binding_E.py:# This script will help add fake CB atoms for Glycines
+evaluate_binding_E.py:#
+evaluate_binding_E.py:# Written by Xingcheng Lin, 06/10/2020
+evaluate_binding_E.py:####################################################################################
+evaluate_binding_E.py:################################################
+evaluate_binding_E.py:###########################################
+evaluate_binding_E.py:        # For TCR modeling, we only need the sequence in the peptide;
+evaluate_binding_E.py:                    # Here, we strictly consider only between the peptide and the TCR (chain C & D):
+evaluate_binding_E.py:                    # Res1 through tm_only, is already in chain E, we only need to control the res2 to
+evaluate_binding_E.py:                    # be in chian C or D;
+evaluate_binding_E.py:                    # The chain ID varies from one TCR to the other, be careful!!!
+evaluate_binding_E.py:                    # 2B4: chain C or D; 5CC7: chain D or E; 226: chain C or D;
+evaluate_binding_E.py:    # Two lists of res_list, one for the peptide (selected by the .tm file), one for the entire list
+evaluate_binding_E.py:    # Here, we are going to take every residues close to the pMHC peptide, so there is no restriction (tm_only) on what is going to be taken;
+evaluate_binding_E.py:        # check to see if the decoys are already generated
+evaluate_binding_E.py:#        number_of_lines_in_file = get_number_of_lines_in_file(os.path.join(
+evaluate_binding_E.py:#            phis_directory, "%s_%s_decoy_%s" % (phi.__name__, protein, parameters_string)))
+evaluate_binding_E.py:#        if not number_of_lines_in_file >= 1:
+evaluate_binding_E.py:    # Calculate the real averaged <E>mg, <E>n, std(Emg) and zScore;
+evaluate_binding_E.py:    # read in Hamiltonian;
+evaluate_binding_E.py:    # Find out how many total phi_i there are and get full parameter string
+evaluate_binding_E.py:    # read in corresponding gammas
+evaluate_binding_E.py:    # Need to filter out the complex number if in the "filtered" mode;
+evaluate_binding_E.py:    # Read in corresponding phis (native);
+evaluate_binding_E.py:    # perform dot products to get native energies
+evaluate_binding_E.py:    # read in Hamiltonian;
+evaluate_binding_E.py:    # Find out how many total phi_i there are and get full parameter string
+evaluate_binding_E.py:    # read in corresponding gammas, note there is only one gamma for both the native and decoy sets;
+evaluate_binding_E.py:    # Need to filter out the complex number if in the "filtered" mode;
+evaluate_binding_E.py:    # Read in corresponding phis (decoy);
+evaluate_binding_E.py:    # perform dot products to get decoy energies 
+evaluate_binding_E.py:###################################################################################################################################################
+evaluate_binding_E.py:# Draw the strong- and weak-binding energies
+evaluate_phi.py:####################################################################################
+evaluate_phi.py:# This script will generate decoy sequences based on your given native sequence
+evaluate_phi.py:#
+evaluate_phi.py:# Written by Xingcheng Lin, 06/10/2020
+evaluate_phi.py:####################################################################################
+evaluate_phi.py:################################################
+evaluate_phi.py:###########################################
+evaluate_phi.py:        # For TCR modeling, we only need the sequence in the peptide;
+evaluate_phi.py:                    # Here, we strictly consider only between the peptide and the TCR (chain C & D):
+evaluate_phi.py:                    # Res1 through tm_only, is already in chain E, we only need to control the res2 to
+evaluate_phi.py:                    # be in chian C or D;
+evaluate_phi.py:                    # The chain ID varies from one TCR to the other, be careful!!!
+evaluate_phi.py:                    # 2B4: chain C or D; 5CC7: chain D or E; 226: chain C or D;
+evaluate_phi.py:    # for protein in training_set:
+evaluate_phi.py:    # Because there is only one protein in the training set; if there are multiple proteins, the script could be different!
+evaluate_phi.py:    # Two lists of res_list, one for the peptide (selected by the .tm file), one for the entire list
+evaluate_phi.py:    # Here, we are going to take every residues close to the pMHC peptide, so there is no restriction (tm_only) on what is going to be taken;
+evaluate_phi.py:    # Before the iteration, we need to store the native res_list_tmonly and res_list_entire; because after mutation for each phi, both of them 
+evaluate_phi.py:    # are changed afterwards to the decoy sequences; but we still need to evaluate the native phi for different phis;
+evaluate_phi.py:        # check to see if the decoys are already generated
+evaluate_phi.py:#        number_of_lines_in_file = get_number_of_lines_in_file(os.path.join(
+evaluate_phi.py:#            phis_directory, "%s_%s_native_%s" % (phi.__name__, protein, parameters_string)))
+evaluate_phi.py:#        if not number_of_lines_in_file >= 1:
+evaluate_phi.py:#        number_of_lines_in_file = get_number_of_lines_in_file(os.path.join(
+evaluate_phi.py:#            phis_directory, "%s_%s_decoys_%s_%s" % (phi.__name__, protein, decoy_method, parameters_string)))
+evaluate_phi.py:#        if not number_of_lines_in_file >= max_decoys:
+evaluate_phi.py:            # Note after this mutation, both res_list_entire and res_list_tmonly have been changed accordingly, because this is a change by reference;
+evaluate_phi.py:############################################
+generate_decoy_seq.py:####################################################################################
+generate_decoy_seq.py:# This script will generate decoy sequences based on your given native sequence
+generate_decoy_seq.py:#
+generate_decoy_seq.py:# Written by Xingcheng Lin, 06/10/2020
+generate_decoy_seq.py:####################################################################################
+generate_decoy_seq.py:################################################
+generate_decoy_seq.py:###########################################
+generate_decoy_seq.py:            # A random seed is provided if necessary for reproductibility of each protein
+generate_decoy_seq.py:            # Residue to be randomly mutated to (randomly selected from 20 amino acids);
+generate_decoy_seq.py:            # Replace the corresponding amino acid with 20 possibilities;
+generate_decoy_seq.py:        # Check and exclude those decoy sequences that coincide with the gBinder sequences, because we don't want good Binders
+generate_decoy_seq.py:        # to be treated as weak binders in our training processes;
+generate_decoy_seq.py:            # Residue to be randomly mutated to (randomly selected from 20 amino acids);
+generate_decoy_seq.py:            # Replace the corresponding amino acid with 20 possibilities;
+generate_decoy_seq.py:            # Residue to be randomly mutated to (randomly selected from 20 amino acids);
+generate_decoy_seq.py:            # Replace the corresponding amino acid with 20 possibilities;
+generate_decoy_seq.py:        # Check and exclude those decoy sequences that coincide with the thymic sequences, because we don't want the randomized
+generate_decoy_seq.py:        # sequences to overlap with them
+generate_decoy_seq.py:        # For checking if the newly generated sequence overlaps with the existing sequence
+generate_decoy_seq.py:            # Randomly select only one position:
+generate_decoy_seq.py:            # Residue to be randomly mutated to (randomly selected from 20 amino acids);
+generate_decoy_seq.py:            # Replace the corresponding amino acid with 20 possibilities;
+generate_decoy_seq.py:            # Check and exclude those mutant sequences that coincide with the thymic sequences, because we don't want to overlap with them
+generate_decoy_seq.py:############################################
+Binary file native_structures_pdbs_with_virtual_cbs/.native.pdb.swp matches
+optimize_gamma.py:####################################################################################
+optimize_gamma.py:# This script will optimize the energy model for gamma file
+optimize_gamma.py:#
+optimize_gamma.py:# Written by Xingcheng Lin, 06/10/2020
+optimize_gamma.py:####################################################################################
+optimize_gamma.py:################################################
+optimize_gamma.py:###########################################
+optimize_gamma.py:        # for "zeroing unreliable eigenvalues"
+optimize_gamma.py:        # for "extending lowest reliable eigenvalue"
+optimize_gamma.py:#    cutoff_modes = []
+optimize_gamma.py:#    for i_noise in range(noise_iterations):
+optimize_gamma.py:#        noisy_B = np.zeros((total_phis, total_phis))
+optimize_gamma.py:#        for i in range(total_phis):
+optimize_gamma.py:#            for j in range(i, total_phis):
+optimize_gamma.py:#                random_B_ij = np.random.normal(
+optimize_gamma.py:#                    loc=half_B[i][j], scale=std_half_B[i][j] / float(num_decoys))
+optimize_gamma.py:#                noisy_B[i][j] = noisy_B[j][i] = random_B_ij - \
+optimize_gamma.py:#                    other_half_B[i][j]
+optimize_gamma.py:#
+optimize_gamma.py:#        noisy_lamb, noisy_P = np.linalg.eig(noisy_B)
+optimize_gamma.py:#        noisy_lamb, noisy_P = sort_eigenvalues_and_eigenvectors(
+optimize_gamma.py:#            noisy_lamb, noisy_P)
+optimize_gamma.py:#        
+optimize_gamma.py:#        try:
+optimize_gamma.py:#            cutoff_mode = np.where(np.abs(lamb - noisy_lamb) / lamb > relative_error_threshold)[0][0]
+optimize_gamma.py:#        except IndexError:
+optimize_gamma.py:#            cutoff_mode = len(lamb)
+optimize_gamma.py:#        cutoff_modes.append(cutoff_mode)
+optimize_gamma.py:#
+optimize_gamma.py:#    cutoff_mode = min(cutoff_modes)
+optimize_gamma.py:    # Hard set a cutoff_mode by looking at the Lamb file itself;
+optimize_gamma.py:#    print(cutoff_modes)
+optimize_gamma.py:    # print("calculate_A_and_B")
+optimize_gamma.py:    # print(datetime.datetime.now())
+optimize_gamma.py:    # print("End")
+optimize_gamma.py:    # print(datetime.datetime.now())
+optimize_gamma.py:    # Find out how many total phi_i there are and get full parameter string
+optimize_gamma.py:    # Output to a file;
+optimize_gamma.py:    # The phi_i decoy is constructed as the union of all decoys of all proteins in the training set;
+optimize_gamma.py:    # Output to a file;
+optimize_gamma.py:    #A, B, half_B, other_half_B, std_half_B = calculate_A_and_B(
+optimize_gamma.py:    #    average_phi_decoy, phi_native, total_phis, num_decoys, phi_i_decoy)
+optimize_gamma.py:    # write gamma file
+optimize_gamma.py:#    gamma_file = open(gamma_file_name, 'w')
+optimize_gamma.py:#    A_file = open(A_file_name, 'w')
+optimize_gamma.py:#    B_file = open(B_file_name, 'w')
+optimize_gamma.py:    #open("%s%s_%s_gamma.dat" % (gammas_directory, training_set_file.split('/')[-1].split('.')[0], full_parameters_string), 'w').write(str(gamma).strip('[]').replace('\n', ' '))
+optimize_gamma.py:        # gamma_file_name = "%sfiltered_%s_%s_gamma.dat" % (gammas_directory, training_set_file.split('/')[-1].split('.')[0], full_parameters_string)
+optimize_gamma.py:        # gamma_file = open(gamma_file_name, 'w')
+optimize_gamma.py:#        filtered_gamma_file = open(filtered_gamma_file_name, 'w')
+optimize_gamma.py:#        filtered_B_file = open(filtered_B_file_name, 'w')
+optimize_gamma.py:#        filtered_lamb_file = open(filtered_lamb_file_name, 'w')
+optimize_gamma.py:#        P_file = open(P_file_name, 'w')
+optimize_gamma.py:#        lamb_file = open(lamb_file_name, 'w')
+optimize_gamma.py:        # open("%sfiltered_%s_%s_gamma.dat" % (gammas_directory, training_set_file.split('/')[-1].split('.')[0], full_parameters_string), 'w').write(str(filtered_gamma).strip('[]').replace('\n', ' '))
+optimize_gamma.py:        # return A, B, gamma, filtered_B, filtered_gamma, filtered_lamb, P, lamb
+optimize_gamma.py:############################################
+optimize_gamma.py:# Cutoff number for noise filtering of eigen values;
+phi1_list.txt:# phi_pairwise_contact_well r_min, r_max, kappa, min_seq_sep
+phi1_list.txt:# phi_protein_mediated_contact_well r_min, r_max, kappa, min_seq_sep, density_threshold, density_kappa
+phi1_list.txt:#phi_protein_mediated_contact_well 6.5 9.5 5.0 10 2.6 7.0
+phi1_list.txt:# phi_water_mediated_contact_well r_min, r_max, kappa, min_seq_sep, density_threshold, density_kappa
+phi1_list.txt:#phi_water_mediated_contact_well 6.5 9.5 5.0 10 2.6 7.0
+sequences/buildseq.py:# This script will get argument passed by command line;
+sequences/buildseq.py:# Get the sequence of the PDB file, and write to an alignment file
+sequences/cmd.cleanSequences.sh:# Get rid of the chain separating line;
+sequences/cmd.cleanSequences_4mac.sh:# Get rid of the chain separating line;
+template_evaluate_binding_E.py:####################################################################################
+template_evaluate_binding_E.py:# This script will help add fake CB atoms for Glycines
+template_evaluate_binding_E.py:#
+template_evaluate_binding_E.py:# Written by Xingcheng Lin, 06/10/2020
+template_evaluate_binding_E.py:####################################################################################
+template_evaluate_binding_E.py:################################################
+template_evaluate_binding_E.py:###########################################
+template_evaluate_binding_E.py:        # For TCR modeling, we only need the sequence in the peptide;
+template_evaluate_binding_E.py:                    # Here, we strictly consider only between the peptide and the TCR (chain C & D):
+template_evaluate_binding_E.py:                    # Res1 through tm_only, is already in chain E, we only need to control the res2 to
+template_evaluate_binding_E.py:                    # be in chian C or D;
+template_evaluate_binding_E.py:                    # The chain ID varies from one TCR to the other, be careful!!!
+template_evaluate_binding_E.py:                    # 2B4: chain C or D; 5CC7: chain D or E; 226: chain C or D;
+template_evaluate_binding_E.py:    # Two lists of res_list, one for the peptide (selected by the .tm file), one for the entire list
+template_evaluate_binding_E.py:    # Here, we are going to take every residues close to the pMHC peptide, so there is no restriction (tm_only) on what is going to be taken;
+template_evaluate_binding_E.py:        # check to see if the decoys are already generated
+template_evaluate_binding_E.py:#        number_of_lines_in_file = get_number_of_lines_in_file(os.path.join(
+template_evaluate_binding_E.py:#            phis_directory, "%s_%s_decoy_%s" % (phi.__name__, protein, parameters_string)))
+template_evaluate_binding_E.py:#        if not number_of_lines_in_file >= 1:
+template_evaluate_binding_E.py:    # Calculate the real averaged <E>mg, <E>n, std(Emg) and zScore;
+template_evaluate_binding_E.py:    # read in Hamiltonian;
+template_evaluate_binding_E.py:    # Find out how many total phi_i there are and get full parameter string
+template_evaluate_binding_E.py:    # read in corresponding gammas
+template_evaluate_binding_E.py:    # Need to filter out the complex number if in the "filtered" mode;
+template_evaluate_binding_E.py:    # Read in corresponding phis (native);
+template_evaluate_binding_E.py:    # perform dot products to get native energies
+template_evaluate_binding_E.py:    # read in Hamiltonian;
+template_evaluate_binding_E.py:    # Find out how many total phi_i there are and get full parameter string
+template_evaluate_binding_E.py:    # read in corresponding gammas, note there is only one gamma for both the native and decoy sets;
+template_evaluate_binding_E.py:    # Need to filter out the complex number if in the "filtered" mode;
+template_evaluate_binding_E.py:    # Read in corresponding phis (decoy);
+template_evaluate_binding_E.py:    # perform dot products to get decoy energies 
+template_evaluate_binding_E.py:###################################################################################################################################################
+template_evaluate_binding_E.py:# Draw the strong- and weak-binding energies
+template_evaluate_phi.py:####################################################################################
+template_evaluate_phi.py:# This script will generate decoy sequences based on your given native sequence
+template_evaluate_phi.py:#
+template_evaluate_phi.py:# Written by Xingcheng Lin, 06/10/2020
+template_evaluate_phi.py:####################################################################################
+template_evaluate_phi.py:################################################
+template_evaluate_phi.py:###########################################
+template_evaluate_phi.py:        # For TCR modeling, we only need the sequence in the peptide;
+template_evaluate_phi.py:                    # Here, we strictly consider only between the peptide and the TCR (chain C & D):
+template_evaluate_phi.py:                    # Res1 through tm_only, is already in chain E, we only need to control the res2 to
+template_evaluate_phi.py:                    # be in chian C or D;
+template_evaluate_phi.py:                    # The chain ID varies from one TCR to the other, be careful!!!
+template_evaluate_phi.py:                    # 2B4: chain C or D; 5CC7: chain D or E; 226: chain C or D;
+template_evaluate_phi.py:    # for protein in training_set:
+template_evaluate_phi.py:    # Because there is only one protein in the training set; if there are multiple proteins, the script could be different!
+template_evaluate_phi.py:    # Two lists of res_list, one for the peptide (selected by the .tm file), one for the entire list
+template_evaluate_phi.py:    # Here, we are going to take every residues close to the pMHC peptide, so there is no restriction (tm_only) on what is going to be taken;
+template_evaluate_phi.py:    # Before the iteration, we need to store the native res_list_tmonly and res_list_entire; because after mutation for each phi, both of them 
+template_evaluate_phi.py:    # are changed afterwards to the decoy sequences; but we still need to evaluate the native phi for different phis;
+template_evaluate_phi.py:        # check to see if the decoys are already generated
+template_evaluate_phi.py:#        number_of_lines_in_file = get_number_of_lines_in_file(os.path.join(
+template_evaluate_phi.py:#            phis_directory, "%s_%s_native_%s" % (phi.__name__, protein, parameters_string)))
+template_evaluate_phi.py:#        if not number_of_lines_in_file >= 1:
+template_evaluate_phi.py:#        number_of_lines_in_file = get_number_of_lines_in_file(os.path.join(
+template_evaluate_phi.py:#            phis_directory, "%s_%s_decoys_%s_%s" % (phi.__name__, protein, decoy_method, parameters_string)))
+template_evaluate_phi.py:#        if not number_of_lines_in_file >= max_decoys:
+template_evaluate_phi.py:            # Note after this mutation, both res_list_entire and res_list_tmonly have been changed accordingly, because this is a change by reference;
+template_evaluate_phi.py:############################################
+Binary file test_structures_pdbs_with_virtual_cbs/.add_fakeCB.py.swp matches
+test_structures_pdbs_with_virtual_cbs/add_fakeCB.py:####################################################################################
+test_structures_pdbs_with_virtual_cbs/add_fakeCB.py:# This script will help add fake CB atoms for Glycines
+test_structures_pdbs_with_virtual_cbs/add_fakeCB.py:#
+test_structures_pdbs_with_virtual_cbs/add_fakeCB.py:# Written by Xingcheng Lin, 06/10/2020
+test_structures_pdbs_with_virtual_cbs/add_fakeCB.py:####################################################################################
+test_structures_pdbs_with_virtual_cbs/add_fakeCB.py:################################################
+test_structures_pdbs_with_virtual_cbs/add_fakeCB.py:###########################################
+tms/cmd.createtm.sh:#########################################################################
+tms/cmd.createtm.sh:# Author: Xingcheng Lin
+tms/cmd.createtm.sh:# Created Time: Mon Jun  8 22:14:51 2020
+tms/cmd.createtm.sh:# File Name: cmd.createtm.sh
+tms/cmd.createtm.sh:# Description: 
+tms/cmd.createtm.sh:#########################################################################
+tms/cmd.createtm.sh:#!/bin/bash

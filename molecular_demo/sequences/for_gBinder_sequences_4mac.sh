@@ -1,4 +1,4 @@
-cat native.seq $(ls gBinder*.pdb.seq | gsort -V) > gBinder_sequences.txt 
+cat native.seq  > gBinder_sequences.txt 
 gsed -i "/>/d; /structureX/d" gBinder_sequences.txt
 tr -d '\n' < gBinder_sequences.txt  > a
 tr "*" "\n" < a > b
